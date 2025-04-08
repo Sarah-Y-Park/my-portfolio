@@ -21,7 +21,7 @@ function Home() {
             <div className="p-4 bg-white rounded-xl shadow">Power BI Project 2</div>
           </div>
           <div className="text-right mt-4">
-            <a href="/insights" className="text-blue-500 hover:underline">자세히 보기 →</a>
+            <a href="/insights" className="text-blue-500 hover:underline">See details →</a>
           </div>
         </div>
       </section>
@@ -35,7 +35,7 @@ function Home() {
             <div className="p-4 bg-white rounded-xl shadow">ETL Case 2</div>
           </div>
           <div className="text-right mt-4">
-            <a href="/systems" className="text-blue-500 hover:underline">자세히 보기 →</a>
+            <a href="/systems" className="text-blue-500 hover:underline">See details →</a>
           </div>
         </div>
       </section>
@@ -49,7 +49,7 @@ function Home() {
             <div className="p-4 bg-white rounded-xl shadow">Quant Project 2</div>
           </div>
           <div className="text-right mt-4">
-            <a href="/quant" className="text-blue-500 hover:underline">자세히 보기 →</a>
+            <a href="/quant" className="text-blue-500 hover:underline">See details →</a>
           </div>
         </div>
       </section>
