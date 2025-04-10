@@ -1,19 +1,29 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
-function Header() {
+function Header({ onHomeClick }) {
   return (
-    <header className="bg-white shadow-md p-4 sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto flex justify-between items-center">
-      <Link to="/">
-        <h1 className="text-xl font-bold text-blue-600 hover:underline">Sarah Yoojin Park</h1>
-      </Link>
-        <nav className="space-x-6">
-            <Link to="/about" className="text-gray-700 hover:text-blue-500">About</Link>
-            <Link to="/insights" className="text-gray-700 hover:text-blue-500">Insights</Link>
-            <Link to="/systems" className="text-gray-700 hover:text-blue-500">Systems</Link>
-            <Link to="/quant" className="text-gray-700 hover:text-blue-500">Quant Lab</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-blue-500">Reach Out</Link>
-
+    <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50 px-6 py-4">
+      <div className="max-w-7xl mx-auto flex justify-center items-center">
+        <nav className="space-x-8 text-sm font-medium">
+          <Link
+            to="main"
+            smooth={true}
+            duration={800}
+            offset={-60}
+            className="text-gray-700 hover:text-pink-500 cursor-pointer transition"
+            onClick={onHomeClick}
+          >
+            Home
+          </Link>
+          <Link to="about" smooth duration={800} offset={-60} className="text-gray-700 hover:text-pink-500 cursor-pointer transition">
+            About
+          </Link>
+          <Link to="portfolio" smooth duration={800} offset={-60} className="text-gray-700 hover:text-pink-500 cursor-pointer transition">
+            Portfolio
+          </Link>
+          <Link to="contact" smooth duration={800} offset={-60} className="text-gray-700 hover:text-pink-500 cursor-pointer transition">
+            Contact
+          </Link>
         </nav>
       </div>
     </header>
