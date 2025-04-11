@@ -69,7 +69,7 @@ function Main() {
           viewport={{ once: true }}
           className="text-gray-900 w-full md:max-w-xl text-left md:pl-0"
         >
-        <h1 className="text-pink-500 text-6xl font-extrabold leading-snug mb-6"> Hi there!<br />I am Sarah. </h1>
+        <h1 className="text-pink-500 text-6xl font-extrabold leading-snug mb-6"> Hi there!<br />I am Yoojin. </h1>
         <pre
             className="whitespace-pre-wrap text-4xl font-extrabold leading-tight min-h-[160px] w-full mb-20"
             style={{ lineHeight: '1.2', height: '160px' }}>
