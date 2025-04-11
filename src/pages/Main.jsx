@@ -42,11 +42,11 @@ function Main() {
   return (
     <section
       id="main"
-      className="w-full min-h-screen bg-pink-50 flex items-center justify-center px-6"
-    >
+      className="relative w-full min-h-screen bg-pink-50 flex items-center justify-center px-6">
+
       <div className="max-w-7xl w-full flex flex-col md:flex-row-reverse items-center gap-20">
         {/* Profile Section */}
-        <div className="relative w-[480px] h-[440px]">
+        <div className="relative w-[480px] h-[440px] hidden md:block">
           {/* Background Shape */}
           <div className="absolute bottom-0 w-full h-[260px] bg-pink-300 rounded-[160px]" />
 
@@ -66,42 +66,48 @@ function Main() {
           viewport={{ once: true }}
           className="text-gray-900 w-full md:max-w-xl text-left md:pl-0"
         >
-          <h1 className="text-pink-500 text-6xl font-extrabold leading-snug mb-6">
-            Hi there!<br />I am Yoojin Park.
-          </h1>
-          <pre
+        <h1 className="text-pink-500 text-6xl font-extrabold leading-snug mb-6"> Hi there!<br />I am Sarah. </h1>
+        <pre
             className="whitespace-pre-wrap text-4xl font-extrabold leading-tight min-h-[160px] w-full mb-20"
-            style={{ lineHeight: '1.2', height: '160px' }}
-          >
-            {currentText}
-            {!isTypingComplete && (
-              <span className="inline-block w-[10px] h-10 bg-gray-300 ml-2 animate-pulse align-middle" />
-            )}
-          </pre>
+            style={{ lineHeight: '1.2', height: '160px' }}>
+          {currentText}
+          {!isTypingComplete && (
+            <span className="inline-block w-[10px] h-10 bg-gray-300 ml-2 animate-pulse align-middle" />)}
+        </pre>
 
-          {/* Buttons */}
-          <div className="mt-8 flex gap-4">
-            <a
-              href="/resume.pdf"
-              download
-              className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition"
-            >
-              Resume
-            </a>
-            <Link
-                to="contact"
-                smooth={true}
-                duration={800}
-                offset={-60}
-                className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition cursor-pointer"
-                >
-                Contact
-            </Link>
+        {/* Buttons */}
+        <div className="mt-8 flex gap-4 hidden md:block">
+          <a
+            href="/resume.pdf"
+            download
+            className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition mr-4">
+            Resume
+          </a>
+          <Link
+              to="contact"
+              smooth={true}
+              duration={800}
+              offset={-60}
+              className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition cursor-pointer">
+              Contact
+          </Link>
+        </div>
+      </motion.div>
+    </div>
 
-          </div>
-        </motion.div>
-      </div>
-    </section>
+    <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-[1]">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        className="w-full h-[80px]"
+      >
+        <path
+          d="M0,60 C150,140 350,-40 500,60 L500,150 L0,150 Z"
+          className="fill-white"
+        ></path>
+      </svg>
+    </div>
+  </section>
   );
 }
 

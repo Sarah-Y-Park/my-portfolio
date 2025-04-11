@@ -6,12 +6,12 @@ function Skill() {
     {
       title: 'Data Analysis & Visualization',
       icon: <FaChartBar size={28} className="text-pink-500" />,
-      skills: ['SQL (MSSQL, MySQL)', 'Power BI', 'Tableau', 'Power Query', 'Google Analytics', 'Data Cleaning', 'Data Transformation'],
+      skills: ['SQL', 'Power BI', 'Tableau', 'Power Query', 'Google Analytics', 'Data Cleaning', 'Data Transformation'],
     },
     {
       title: 'ETL & Process Automation',
       icon: <FaDatabase size={28} className="text-pink-500" />,
-      skills: ['Power Query', 'Report Automation', 'Workflow Optimization'],
+      skills: ['Python','Power Query', 'Report Automation', 'Workflow Optimization'],
     },
     {
       title: 'Tools & Platforms',
@@ -21,12 +21,12 @@ function Skill() {
     {
       title: 'Programming & Scripting',
       icon: <FaCode size={28} className="text-pink-500" />,
-      skills: ['Java', 'JavaScript', 'HTML', 'CSS', 'Python', 'R'],
+      skills: ['React', 'Java', 'JavaScript', 'HTML', 'CSS', 'Python', 'R'],
     },
   ];
 
   return (
-    <section id="skills" className="bg-[#FBFBFB] py-24 px-6">
+    <section id="skills" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
       <h2 className="text-center text-2xl font-bold text-pink-500 mb-12"> Skills </h2>
 
@@ -59,7 +59,10 @@ function Skill() {
           ))}
         </div>
       </div>
-    </section>
+
+
+  </section>
+
   );
 }
 
