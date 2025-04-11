@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
+import { Link as RouterLink} from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 import ScrollDownArrow from '../components/ScrollDownArrow';
 
 
@@ -79,20 +80,20 @@ function Main() {
 
         {/* Buttons */}
         <div className="mt-8 flex gap-4 hidden md:block">
-          <a
-            href="/resume.pdf"
-            download
-            className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition mr-4">
+          <RouterLink
+            to="/resume"
+            className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition mr-4"
+          >
             Resume
-          </a>
-          <Link
+          </RouterLink>
+          <ScrollLink
               to="contact"
               smooth={true}
               duration={800}
               offset={-60}
               className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition cursor-pointer">
               Contact
-          </Link>
+          </ScrollLink>
         </div>
       </motion.div>
     </div>
