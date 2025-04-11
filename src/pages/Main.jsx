@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-scroll';
+import ScrollDownArrow from '../components/ScrollDownArrow';
 
 
 function Main() {
@@ -40,6 +41,7 @@ function Main() {
   }, [charIndex, lineIndex]);
 
   return (
+  <>
     <section
       id="main"
       className="relative w-full min-h-screen bg-pink-50 flex items-center justify-center px-6 text-sm sm:text-base ">
@@ -108,6 +110,10 @@ function Main() {
       </svg>
     </div>
   </section>
+
+  <ScrollDownArrow to="about" />
+</>
+
   );
 }
 

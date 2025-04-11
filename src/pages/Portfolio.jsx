@@ -16,7 +16,8 @@ function Portfolio() {
       : projects.filter((project) => project.category === activeTab);
 
   return (
-    <section id="portfolio" className="bg-[#FBFBFB] py-24 relative min-h-screen">
+    
+    <section id="portfolio" className="py-24 relative min-h-screen">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-extrabold text-cente text-pink-500 mb-4">Portfolio</h2>
           <div className="w-24 h-1 bg-pink-500 mb-6"></div>

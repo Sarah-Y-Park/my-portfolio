@@ -1,5 +1,5 @@
-import Experience from './Experience'; 
-import Skill from './Skill'; 
+
+import ScrollDownArrow from '../components/ScrollDownArrow';
 
 function About() {
   const expertiseData = [
@@ -11,7 +11,7 @@ function About() {
     {
       icon: "/icons/management.gif",
       title: "Workflow Automation",
-      description: "I streamline repetitive tasks and reporting processes using tools like Excel, Power Query, SQL, and scripts. I love building systems that save time and reduce human error — so teams can focus on what really matters..",
+      description: "I streamline repetitive tasks and reporting processes using tools like Excel, Power Query, SQL, and scripts. I love building systems that save time and reduce human error — so teams can focus on what really matters.",
     },
     {
       icon: "/icons/visualize.gif",
@@ -23,7 +23,7 @@ function About() {
   return (
     <>
       <section id="about" className="py-24 relative">
-        <div className="max-w-6xl mx-auto px-6 pb-36">
+        <div className="max-w-6xl mx-auto px-6">
           {/*First Section - About & Experetise */}
           <h2 className="text-3xl font-extrabold text-pink-500 mb-4">About</h2>
           <div className="w-24 h-1 bg-pink-500 mb-6"></div>
@@ -37,9 +37,9 @@ function About() {
           </p>
 
           <h3 className="text-center text-2xl font-bold text-pink-500 mb-12">My Expertise</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center mb-16">
             {expertiseData.map((item, index) => (
-              <div key={index} className="flex flex-col items-center rounded-xl shadow-md p-6">
+              <div key={index} className="flex flex-col items-center rounded-xl shadow-md p-5">
                 <img src={item.icon} alt={item.title} className="w-24 h-24 mb-4 object-contain" />
                 <p className="font-semibold">{item.title}</p>
                 <p className="text-sm text-gray-600 max-w-xs">{item.description}</p>
@@ -47,36 +47,17 @@ function About() {
             ))}
           </div>
 
+          <div className="flex justify-center mt-8">
+            <ScrollDownArrow to="experience" />
+          </div>
+
         </div>
-
-        {/* Experience */}
-
-        <Experience />
-
-
-        {/* Skills */}
-
-        <Skill />
-
-
-
-
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-[1]">
-        <svg
-          viewBox="0 0 500 150"
-          preserveAspectRatio="none"
-          className="w-full h-[80px]"
-        >
-          <path
-            d="M0,60 C150,140 350,-40 500,60 L500,150 L0,150 Z"
-            className="fill-[#FBFBFB]"
-          ></path>
-        </svg>
-      </div>
 
     </section>
 
-    </>
+
+
+  </>
   );
 }
 export default About;

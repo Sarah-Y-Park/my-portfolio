@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Briefcase, GraduationCap } from 'lucide-react';
 
 
+
 function Expereince() {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -15,7 +16,7 @@ function Expereince() {
       status: 'Internship, Full-time',
       description:
         '',
-      skills: ['DevOps', 'CI/CD', 'Kubernetes', 'JS/TS', 'NextJS'],
+      skills: ['Power BI', 'Power Query', 'Qualitative Data', 'Topic Modeling', 'Qualtrics'],
     },
     {
         type: 'break',
@@ -30,7 +31,7 @@ function Expereince() {
       location: 'Calgary, Canada',
       status: 'Diploma',
       description: 'Completed a two-year intensive program focused on full-stack web development, including HTML, CSS, JavaScript, React, Node.js, and database management.',
-      skills: ['React', 'JavaScript', 'Node.js', 'SQL'],
+      skills: ['React', 'JavaScript','Java','HTML','CSS', 'Node.js', 'SQL','Figma','Web Development', 'Front-end Development','Back-end Development'],
     },
 
     {
@@ -42,7 +43,7 @@ function Expereince() {
         status: 'Parmanent, Full-time',
         description:
           '',
-        skills: ['DevOps', 'CI/CD', 'Kubernetes', 'JS/TS', 'NextJS'],
+        skills: ['Power BI', 'Business Intelligence', 'Workflow Automation','Financial Reporting','Risk Analysis'],
       },
       {
         type: 'work',
@@ -53,7 +54,7 @@ function Expereince() {
         status: 'Parmanent, Full-time',
         description:
           '',
-        skills: ['DevOps', 'CI/CD', 'Kubernetes', 'JS/TS', 'NextJS'],
+        skills: ['Python','SQL','MySQL', 'Power BI', 'Google Anayltics', 'Google ads', 'Facebook ads','Survey Data', 'User logs','Growth Marketing'],
       },
       {
         type: 'work',
@@ -64,7 +65,7 @@ function Expereince() {
         status: 'Parmanent, Full-time',
         description:
           '',
-        skills: ['DevOps', 'CI/CD', 'Kubernetes', 'JS/TS', 'NextJS'],
+        skills: ['Power BI', 'Business Intelligence','Workflow Automation', 'R', 'Python', 'SQL', 'MSSQL', 'Quantitative Finance','Statistical Finance', 'Financial Modeling'],
       },
 
       {
@@ -75,7 +76,7 @@ function Expereince() {
         location: 'South Korea',
         status: 'Bachelor of Business Administration, Arts',
         description: 'Completed a two-year intensive program focused on full-stack web development, including HTML, CSS, JavaScript, React, Node.js, and database management.',
-        skills: ['React', 'JavaScript', 'Node.js', 'SQL'],
+        skills: ['Business Administration', 'Marketing Strategy', 'Quantitative', 'Economics','Finance'],
       },
   ];
 
@@ -84,7 +85,7 @@ function Expereince() {
   };
 
   return (
-  <section className="py-24 px-6 text-sm sm:text-base">
+  <section id="experience" className="py-24 px-6 text-sm sm:text-base hidden md:block">
     <div className="max-w-3xl mx-auto">
       <h2 className="text-center text-2xl font-bold text-pink-500 mb-12">Experience & Education</h2>
 
@@ -156,6 +157,8 @@ function Expereince() {
           </div>
         ))}
       </div>
+
+
     </div>
   </section>
 

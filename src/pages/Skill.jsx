@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaDatabase, FaChartBar, FaTools, FaCode } from 'react-icons/fa';
+import ScrollDownArrow from '../components/ScrollDownArrow';
 
 function Skill() {
   const skillCategories = [
@@ -26,9 +27,10 @@ function Skill() {
   ];
 
   return (
-    <section id="skills" className="py-24 px-6">
+  <>
+    <section id="skills" className="py-24 relative mb-36">
       <div className="max-w-6xl mx-auto">
-      <h2 className="text-center text-2xl font-bold text-pink-500 mb-12"> Skills </h2>
+        <h2 className="text-center text-2xl font-bold text-pink-500 mb-12"> Skills </h2>
 
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -57,12 +59,18 @@ function Skill() {
               </div>
             </motion.div>
           ))}
+          
         </div>
+        <div className="flex justify-center mt-8">
+          <ScrollDownArrow to="portfolio" />
+        </div>
+
+
       </div>
 
+    </section>
 
-  </section>
-
+  </>
   );
 }
 
