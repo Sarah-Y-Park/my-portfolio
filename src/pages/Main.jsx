@@ -42,7 +42,7 @@ function Main() {
   return (
     <section
       id="main"
-      className="relative w-full min-h-screen bg-pink-50 flex items-center justify-center px-6">
+      className="relative w-full min-h-screen bg-pink-50 flex items-center justify-center px-6 text-sm sm:text-base ">
 
       <div className="max-w-7xl w-full flex flex-col md:flex-row-reverse items-center gap-20">
         {/* Profile Section */}

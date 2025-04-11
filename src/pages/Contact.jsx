@@ -1,7 +1,35 @@
-import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
+  const form = useRef();
+  const [isSent, setIsSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_1atfhjb',
+      'template_hb4p1tn',
+      form.current,
+      'av1nhcor3XZG7aIJF'
+    ).then(
+      (result) => {
+        toast.success("Message sent!");
+        setIsSent(true);
+        form.current.reset();
+      },
+      (error) => {
+        toast.error("Something went wrong.");
+        console.log('FAILED...', error.text);
+      }
+    );
+  }
+
+
   return (
     <section id="contact" className="py-24 bg-pink-50">
         <div className="max-w-6xl mx-auto px-6">
@@ -12,28 +40,54 @@ function Contact() {
 
         {/* Form + Map */}
         <div className="grid md:grid-cols-2 gap-10">
-          {/* Email Form */}
-          <form className="space-y-4">
-            <input
-              type="text"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
-              placeholder="Name"
-            />
-            <input
-              type="email"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
-              placeholder="Email Address"
-            />
-            <input
-              type="text"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
-              placeholder="Subject"
-            />
-            <textarea
-              rows="5"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400"
-              placeholder="Write your message..."
-            />
+        
+        {/* Email Form */}
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
+            <div className="relative">
+              <label className="absolute -top-3 left-4 bg-pink-50 px-1 text-pink-500 text-sm font-semibold bg-tr">Name</label>
+              <input
+                type="text"
+
+                name="user_name"
+                className="w-full border-2 border-pink-400 rounded-md px-4 py-3 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-pink-300"
+                placeholder="Name"
+                required
+              />
+            </div>
+
+            <div className="relative">
+              <label className="absolute -top-3 left-4 bg-pink-50 px-1 text-pink-500 text-sm font-semibold">Email Address</label>
+              <input
+                type="email"
+                name="user_email"
+                className="w-full border-2 border-pink-400 rounded-md px-4 py-3 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-pink-300"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+
+            <div className="relative">
+              <label className="absolute -top-3 left-4 bg-pink-50 px-1 text-pink-500 text-sm font-semibold">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                className="w-full border-2 border-pink-400 rounded-md px-4 py-3 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-pink-300"
+                placeholder="Subject"
+                required
+              />
+            </div>
+
+            <div className="relative">
+              <label className="absolute -top-3 left-4 bg-pink-50 px-1 text-pink-500 text-sm font-semibold">Message</label>
+              <textarea
+                name="message"
+                rows="5"
+                className="w-full border-2 border-pink-400 rounded-md px-4 py-3 placeholder-transparent focus:outline-none focus:ring-2 focus:ring-pink-300"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </div>
+
             <div className="text-center">
               <button
                 type="submit"
@@ -57,14 +111,12 @@ function Contact() {
         </div>
 
         {/* Social Icons */}
-        <div className="mt-12 flex justify-center gap-8 text-pink-500 text-2xl">
-          <a href="mailto:hello@example.com" aria-label="Email">
-            <FaEnvelope />
-          </a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <div className="mt-12 flex justify-center gap-8 text-pink-500 text-4xl">
+
+          <a href="https://github.com/Sarah-Y-Park" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/sarahyoopark" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <a href="https://linkedin.com/in/yoojinpark012" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
         </div>

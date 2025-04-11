@@ -9,7 +9,7 @@ function Expereince() {
     {
       type: 'work',
       title: 'Data Analyst Assistant',
-      company: 'University of Calgary',
+      company: '@University of Calgary',
       period: 'Jan 2025 - Mar 2025',
       location: 'Caglary, Canada',
       status: 'Internship, Full-time',
@@ -19,13 +19,13 @@ function Expereince() {
     },
     {
         type: 'break',
-        title: '2-Year Career Break for Parenting \n (Hardest Project I’ve Ever Managed)',
+        title: '2-Year Career Break for Parenting (Hardest Project I’ve Ever Managed)',
         period: '2022 - 2025',
     },
     {
       type: 'education',
       title: 'Information Technology, Software Development',
-      company: 'Southern Alberta Institute of Technology',
+      company: '@Southern Alberta Institute of Technology',
       period: '2022',
       location: 'Calgary, Canada',
       status: 'Diploma',
@@ -36,7 +36,7 @@ function Expereince() {
     {
         type: 'work',
         title: 'Data Analyst',
-        company: 'Samwoo A System',
+        company: '@Samwoo A System',
         period: 'May 2019 - Aug 2020',
         location: 'South Korea',
         status: 'Parmanent, Full-time',
@@ -47,7 +47,7 @@ function Expereince() {
       {
         type: 'work',
         title: 'Data Analyst',
-        company: 'Boozaapp Company',
+        company: '@Boozaapp Company',
         period: 'Oct 2018 - Apr 2019',
         location: 'South Korea',
         status: 'Parmanent, Full-time',
@@ -58,7 +58,7 @@ function Expereince() {
       {
         type: 'work',
         title: 'Data Analyst',
-        company: 'Andbeyond Capital Management',
+        company: '@Andbeyond Capital Management',
         period: 'Sep 2016 - Sep 2018',
         location: 'South Korea',
         status: 'Parmanent, Full-time',
@@ -70,7 +70,7 @@ function Expereince() {
       {
         type: 'education',
         title: 'Health Services Management, English-American Culture',
-        company: 'Kyung Hee University',
+        company: '@Kyung Hee University',
         period: '2015',
         location: 'South Korea',
         status: 'Bachelor of Business Administration, Arts',
@@ -84,7 +84,7 @@ function Expereince() {
   };
 
   return (
-  <section className="py-24 px-6">
+  <section className="py-24 px-6 text-sm sm:text-base">
     <div className="max-w-3xl mx-auto">
       <h2 className="text-center text-2xl font-bold text-pink-500 mb-12">Experience & Education</h2>
 
