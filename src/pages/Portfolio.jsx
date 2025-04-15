@@ -55,16 +55,23 @@ function Portfolio() {
       </div>
     </div>
 
-    <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-[1]">
+    <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] z-[1]"
+    style={{
+      backgroundColor: '#fdf2f8',
+      backgroundImage: `url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f496ed' fill-opacity='0.24' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E")`,
+      backgroundRepeat: 'repeat',
+      backgroundSize: 'auto'
+    }}>
       <svg
         viewBox="0 0 500 150"
         preserveAspectRatio="none"
-        className="w-full h-[80px]"
+        className="w-full h-[80px] rotate-180"
       >
         <path
           d="M0,60 C150,140 350,-40 500,60 L500,150 L0,150 Z"
-          className="fill-pink-50"
-        ></path>
+          fill="white"
+          fill-opacity="1"
+        />
       </svg>
     </div>
 

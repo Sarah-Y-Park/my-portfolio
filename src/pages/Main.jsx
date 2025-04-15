@@ -45,19 +45,22 @@ function Main() {
   <>
     <section
       id="main"
-      className="relative w-full min-h-screen bg-pink-50 flex items-center justify-center px-6 text-sm sm:text-base ">
-
+      className="relative w-full min-h-screen bg-pink-50 flex items-center justify-center px-6 text-sm sm:text-base"
+      style={{
+        backgroundColor: '#fdf2f8',
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f496ed' fill-opacity='0.24' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E")`
+        }}>
       <div className="max-w-7xl w-full flex flex-col md:flex-row-reverse items-center gap-20">
         {/* Profile Section */}
         <div className="relative w-[480px] h-[440px] hidden md:block">
           {/* Background Shape */}
-          <div className="absolute bottom-0 w-full h-[260px] bg-pink-300 rounded-[160px]" />
+          <div className="absolute bottom-0 w-full h-[240px] bg-pink-300 rounded-[160px]" />
 
           {/* Profile Image */}
           <img
             src="/Profile.png"
             alt="Sarah"
-            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 rounded-3xl translate-y-[-3px] w-[320px] h-auto object-cover"
+            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 rounded-3xl translate-y-[-3px] w-[480px] h-auto object-cover"
           />
         </div>
 

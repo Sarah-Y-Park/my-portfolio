@@ -31,7 +31,13 @@ function Contact() {
 
 
   return (
-    <section id="contact" className="py-24 bg-pink-50">
+    <section id="contact" className="py-24 bg-pink-50" 
+            style={{
+              backgroundColor: '#fdf2f8',
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f496ed' fill-opacity='0.24' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E")`
+              }}
+    >
+        
         <div className="max-w-6xl mx-auto px-6">
 
             <h2 className="text-3xl font-extrabold text-cente text-pink-500 mb-4">Contact</h2>

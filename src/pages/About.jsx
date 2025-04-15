@@ -48,7 +48,7 @@ function About() {
           </div>
 
           <div className="flex justify-center mt-8">
-            <ScrollDownArrow to="experience" />
+            <ScrollDownArrow to="skills" />
           </div>
 
         </div>

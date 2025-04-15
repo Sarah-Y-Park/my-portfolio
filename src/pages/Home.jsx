@@ -22,7 +22,7 @@ function Home() {
         <Main key={mainKey} />
       </main>
       <About />
-      <Experience />
+      {/* <Experience /> */}
       <Skill />
       <Portfolio />
       <Contact />
