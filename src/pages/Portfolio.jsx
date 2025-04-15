@@ -3,7 +3,11 @@ import { useState } from 'react';
 const tabs = ["All", "BI", "Systems", "Quant"];
 
 const projects = [
-  { id: 1, category: "All", title: "Coming soon!", bg: " bg-pink-300" },
+  { id: 1, category: "Systems", title: "Coming soon!", bg: " bg-pink-400" },
+  { id: 2, category: "BI", title: "Coming soon!", bg: " bg-pink-300" },
+  { id: 3, category: "Quant", title: "Coming soon!", bg: " bg-pink-200" },
+  { id: 4, category: "Quant", title: "Coming soon!", bg: " bg-pink-100" },
+
 
 ];
 

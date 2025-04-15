@@ -72,9 +72,9 @@ function Main() {
           viewport={{ once: true }}
           className="text-gray-900 w-full md:max-w-xl text-left md:pl-0"
         >
-        <h1 className="text-pink-500 text-6xl font-extrabold leading-snug mb-6"> Hi there!<br />I am Yoojin. </h1>
+        <h1 className="text-pink-500 text-3xl sm:text-5xl md:text-6xl font-extrabold leading-snug mb-6"> Hi there!<br />I am Yoojin. </h1>
         <pre
-            className="whitespace-pre-wrap text-4xl font-extrabold leading-tight min-h-[160px] w-full mb-20"
+            className="whitespace-pre-wrap text-lg sm:text-2xl md:text-4xl font-extrabold leading-tight min-h-[160px] w-full mb-20"
             style={{ lineHeight: '1.2', height: '160px' }}>
           {currentText}
           {!isTypingComplete && (
@@ -82,10 +82,10 @@ function Main() {
         </pre>
 
         {/* Buttons */}
-        <div className="mt-8 flex gap-4 hidden md:block">
+        <div className="mt-8 flex gap-4">
           <RouterLink
             to="/resume"
-            className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition mr-4"
+            className="px-4 py-1.5 text-sm sm:px-6 sm:py-2 sm:text-base border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition"
           >
             Resume
           </RouterLink>
@@ -94,7 +94,7 @@ function Main() {
               smooth={true}
               duration={800}
               offset={-60}
-              className="px-6 py-2 border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition cursor-pointer">
+              className="px-4 py-1.5 text-sm sm:px-6 sm:py-2 sm:text-base border-2 border-pink-500 text-pink-600 font-bold rounded-full hover:bg-pink-500 hover:text-white transition cursor-pointer">
               Contact
           </ScrollLink>
         </div>
