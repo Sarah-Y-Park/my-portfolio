@@ -58,7 +58,7 @@ function Main() {
 
           {/* Profile Image */}
           <img
-            src="/Profile.png"
+            src="assets/Profile.png"
             alt="Sarah"
             className="absolute bottom-0 left-1/2 transform -translate-x-1/2 rounded-3xl translate-y-[-3px] w-[480px] h-auto object-cover"
           />

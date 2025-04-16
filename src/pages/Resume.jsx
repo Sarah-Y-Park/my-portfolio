@@ -25,7 +25,7 @@ function Resume() {
             {/* Download Button */}
             <div className="flex justify-center mb-12">
             <a
-                href="/YoojinPark_Resume.pdf"
+                href="assets/YoojinPark_Resume.pdf"
                 download
                 className="flex items-center gap-2 bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition"
             >
